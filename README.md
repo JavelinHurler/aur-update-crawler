@@ -1,6 +1,8 @@
-# AUR Helper
+# Toru
 
 ## What it is
+
+## What does the name mean
 
 ## Why another AUR helper
 
