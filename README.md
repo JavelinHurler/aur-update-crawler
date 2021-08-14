@@ -1,5 +1,13 @@
-# Aur Update Crawler
+# AUR Helper
 
-## Dependencies
-- rofi
-- git
+## What it is
+
+## Why another AUR helper
+
+There are a ton of AUR helpers out there so why do we write another one? 
+
+## Basic idea
+
+## How it works
+
+## Contributing
