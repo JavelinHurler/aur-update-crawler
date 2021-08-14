@@ -79,6 +79,16 @@ then
         fi
         cd ${AUR_DIR}
     done
+elif [ "$1" = "usage" ]
+then
+    echo -e "${GREEN}aur update${NOCOLOR} <list of package names>"
+    echo -e "\tupdate given packages"
+    echo -e "\t(if no packages are given all packages get an update)"
+    echo -e "\n${GREEN}aur install${NOCOLOR} <link to git repo> <name>"
+    echo -e "\tinstalls given aur package by git link"
+    echo -e "\tname: name of the git folder in aur folder"
+    echo -e "\n${GREEN}aur check-update${NOCOLOR}"
+    echo -e "\tprints list of aur packages that have an update"
 else
     print_usage_error
 fi
