@@ -76,3 +76,16 @@ toru list
 ## Contributing
 
 If you see any error, bug, typo or you have just an idea how to improve Toru, feel free to contribute.
+
+## Next steps
+
+- [ ] Use PKG nameing of the packages
+    - now there are two names for every package: the one of the folder and the one of the package controlled by pacman
+    - in download process first give an temp folder name and then rename to pkh name
+    - in list command give alternate color if folder is not an valid package
+- [ ] matching of packages and aur folders
+    - add an file in aur folder that contains the folders that are valid installed packages
+    - in list commands use this file
+    - add clean command to delete folders and files from aur dir toru has no track of
+- [ ] create delete command to delete package from pacman and from aur dir
+    - check function that matches aur dir folders to pacman -Q output which should be run every time to make shure the packages are still installed
