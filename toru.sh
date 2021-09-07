@@ -4,7 +4,9 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
 NOCOLOR='\033[0m'
-AUR_DIR=~/Downloads/AUR/
+AUR_DIR=/home/javelinhurler/
+. /home/javelinhurler/.config/toru/config
+
 
 function makepkg_si_and_clean {
     cd "${AUR_DIR}/${1}"
