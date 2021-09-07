@@ -1,18 +1,18 @@
 # Toru
 
-## What it is
+## What it is ?
 
 Toru is an minimal aur helper. It stores the clones of the aur git-repos in an folder chosen by user.
 
-## What does the name mean
+## What does the name mean ?
 
 Since the standard package manager is called pacman, we looked for a name that has something to do with the game. Toru Iwanti was the developer in charge for the pacman game, so we decided to honor him by naming our aur-helper after him.
 
-## Why another AUR helper
+## Why another AUR helper ?
 
 There are a ton of aur helpers out there so why do we write another one? The simple answer is simplicity and control. The main difference between Toru and the other aur-helpers is, that toru does anything only if the user explicitly commands it.
 
-## How it works
+## How it works ?
 
 Toru works by storing the clones of the aur git repos in an designated folder. We recommend `~/Downloads/AUR/`.
 Toru will:
