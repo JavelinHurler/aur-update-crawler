@@ -24,6 +24,55 @@ Toru will:
 
 One important thing is that Toru will install packages only via giving a link. That is one decision we took and in our oppiniomn the biggest advantage. The user does know at any point in time what exactly will be installed.
 
+## Installation
+
+There are two ways of installing toru on your system.
+
+### Put in bin
+
+The first is to copy the `toru.sh` to your binary folder. And give in execution rights.
+
+```bash
+git clone https://github.com/JavelinHurler/toru.git toru && cd toru
+cp toru.sh /usr/bin/toru
+chmod +x /usr/bin/toru
+```
+
+### Create alias
+
+The second way is to put the toru script to any dir on your file system and to create an alias to run it.
+
+```bash
+git clone https://github.com/JavelinHurler/toru.git toru && cd toru
+cp toru.sh ~/toru.sh
+chmod +x ~/toru.sh
+```
+
+This is one example with an given path. you can change path to toru.sh.
+
+```bash
+# in any file where the aliases are set add the following
+alias toru="bash ~/toru.sh"
+```
+
+
+## Usage
+```
+toru update <list of package names>
+	update given packages
+	(if no packages are given all packages get an update)
+
+toru install <link to git repo> <name>
+	installs given aur package by git link
+	name: name of the git folder in aur folder
+
+toru check-update
+	prints list of aur packages that have an update
+
+toru list
+	prints list of folders in AUR directory
+```
+
 ## Contributing
 
 If you see any error, bug, typo or you have just an idea how to improve Toru, feel free to contribute.
