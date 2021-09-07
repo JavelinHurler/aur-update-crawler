@@ -51,7 +51,7 @@ then
     shift
     if [ "$#" -ge 2 ]
     then
-        git clone ${1} ${2}
+        git clone ${1} ${AUR_DIR}/${2}
         if [ "$?" -eq 0 ]
         then
             makepkg_si_and_clean "${2}"
