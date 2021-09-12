@@ -63,7 +63,7 @@ then
     else
         print_usage_error
     fi
-elif [ "$1" = "check-update" ]
+elif [ "$1" = "checkupdates" ]
 then
     mapfile -t dir_list < <( find $AUR_DIR -maxdepth 1 -mindepth 1 -type d -printf '%f\n' )
     for dir in ${dir_list[@]}
@@ -96,7 +96,7 @@ then
     echo -e "\n${GREEN}toru install${NOCOLOR} <link to git repo> <name>"
     echo -e "\tinstalls given aur package by git link"
     echo -e "\tname: name of the git folder in aur folder"
-    echo -e "\n${GREEN}toru check-update${NOCOLOR}"
+    echo -e "\n${GREEN}toru checkupdates${NOCOLOR}"
     echo -e "\tprints list of aur packages that have an update"
     echo -e "\n${GREEN}toru list${NOCOLOR}"
     echo -e "\tprints list of folders in AUR directory"
